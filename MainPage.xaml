@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp2.MainPage">
+
+    <!--<SwipeView Threshold="200" SwipeStarted="SwipeView_swipeStarted" SwipeChanging="SwipeView_swipeChanging" SwipeEnded="SwipeView_swipeEnded">
+        <SwipeView.LeftItems>
+            <SwipeItems Mode="Reveal">
+                <SwipeItem Text="12345" BackgroundColor="Purple" Invoked="SwipeItem_Invoked">
+
+                </SwipeItem>
+            </SwipeItems>
+            
+           
+        </SwipeView.LeftItems>
+        <Grid HeightRequest="100" WidthRequest="300">
+            <Label BackgroundColor="Gray" HorizontalOptions="Center" VerticalOptions="Center" Text="SwipeZone"></Label>
+        </Grid>
+    </SwipeView>-->
+
+    <!--<SearchBar CancelButtonColor="Red" TextChanged="SearchBar_TextChanged" SearchButtonPressed="SearchBar_SearchButtonPressed">
+        
+    </SearchBar>-->
+
+    <!--<ScrollView>-->
+
+    <ScrollView>
+
+        <VerticalStackLayout>
+
+            <SearchBar CancelButtonColor="Red" TextChanged="SearchBar_TextChanged" SearchButtonPressed="SearchBar_SearchButtonPressed"/>
+        
+            <Grid MaximumHeightRequest="300" Padding="20" x:Name="Card">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+
+
+                <Label x:Name="Name" Grid.Column="0" Grid.Row="0" Text="{Binding person.Name}"></Label>
+                <Label Grid.Column="0" Grid.Row="1" Text="{Binding person.Surname}"></Label>
+                <Label Grid.Column="0" Grid.Row="2" Text="{Binding person.Patronymic}"></Label>
+            
+                <Image x:Name="img" BackgroundColor="CornflowerBlue" Grid.Column="1" Grid.RowSpan="3" ></Image>
+            </Grid>
+
+            <Grid MaximumHeightRequest="300" Padding="20" x:Name="Card2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+
+
+                <Label Grid.Column="0" Grid.Row="0" Text="{Binding person1.Name}"></Label>
+                <Label Grid.Column="0" Grid.Row="1" Text="{Binding person1.Surname}"></Label>
+                <Label Grid.Column="0" Grid.Row="2" Text="{Binding person1.Patronymic}"></Label>
+
+                <Image x:Name="img1" BackgroundColor="PapayaWhip" Grid.Column="1" Grid.RowSpan="3" ></Image>
+            </Grid>
+
+            <Grid MaximumHeightRequest="300" Padding="20" x:Name="Card3">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+
+
+                <Label Grid.Column="0" Grid.Row="0" Text="{Binding person2.Name}"></Label>
+                <Label Grid.Column="0" Grid.Row="1" Text="{Binding person2.Surname}"></Label>
+                <Label Grid.Column="0" Grid.Row="2" Text="{Binding person2.Patronymic}"></Label>
+
+                <Image x:Name="img2" BackgroundColor="OliveDrab" Grid.Column="1" Grid.RowSpan="3" ></Image>
+
+
+            </Grid>
+
+            <Grid MaximumHeightRequest="300" Padding="20" x:Name="Card4">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+
+
+                <Label Grid.Column="0" Grid.Row="0" Text="{Binding person3.Name}"></Label>
+                <Label Grid.Column="0" Grid.Row="1" Text="{Binding person3.Surname}"></Label>
+                <Label Grid.Column="0" Grid.Row="2" Text="{Binding person3.Patronymic}"></Label>
+
+                <Image x:Name="img3" BackgroundColor="Moccasin" Grid.Column="1" Grid.RowSpan="3" ></Image>
+
+
+            </Grid>
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+    
+    
+    
+    <!--</ScrollView>-->
+
+</ContentPage>
